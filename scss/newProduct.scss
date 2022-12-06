@@ -1,23 +1,35 @@
 .newProduct {
+  @include breakpoints(md) {
+    display: flex;
+    padding: 0 0 5%;
+  }
   &__image {
     background-color: $firstColor;
-    margin: 0 0 0 40%;
+    margin: 0 0 0 30%;
     padding: 10% 0;
     width: 30;
     display: flex;
+    @include breakpoints(md) {
+      position: relative;
+      right: -35%;
+      padding: 5% 0 3%;
+    }
   }
   &__information {
+    @include breakpoints(md) {
+      position: relative;
+      left: -50%;
+    }
     &__text {
-        margin: 10% 15% 10% 5%;
+      margin: 10% 15% 10% 5%;
       &__title {
-          color: $titleColor;
-          font-size: 25px;
-          font-weight: 700;
-          span{
-            font-weight: 500;
-            display: block;
-          }
-        
+        color: $titleColor;
+        font-size: 25px;
+        font-weight: 700;
+        span {
+          font-weight: 500;
+          display: block;
+        }
       }
       &__description {
         color: $textColor;
@@ -29,20 +41,23 @@
       }
     }
     &__buttons {
-        margin: 10% 15% 10% 5%;
+      margin: 10% 15% 10% 5%;
       &__discover {
         background-color: $textColorLight;
         border: none;
-        padding: 3%;
-        margin-right: -0.1%;
+        padding: 1rem;
         font-size: 8px;
       }
       &__add {
         background-color: $buttonColor;
         color: $containerColor;
         border: none;
-        padding: 4%;
+        padding: 1.05rem;
         margin-left: -1%;
+        font-size: 11px;
+        @include breakpoints(md) {
+          margin-left: -2%;
+   }
       }
     }
   }

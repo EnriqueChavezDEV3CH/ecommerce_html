@@ -1,0 +1,21 @@
+.product {
+  @include breakpoints(md) {
+    margin-right: 15%;
+  }
+  &__title {
+    color: $titleColor;
+    margin-bottom: 5%;
+    font-size: 20px;
+    font-weight: 600;
+    @include breakpoints(md) {
+      padding-bottom: 10%;
+    }
+  }
+  &__items {
+    color: $textColor;
+    margin-bottom: 10%;
+    p {
+      padding-bottom: 3%;
+    }
+  }
+}

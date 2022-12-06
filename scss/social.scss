@@ -1,0 +1,41 @@
+.social {
+  &__title {
+    color: $titleColor;
+    margin-bottom: 5%;
+    font-size: 20px;
+    font-weight: 600;
+    @include breakpoints(md) {
+      padding-bottom: 5%;
+    }
+  }
+  &__items {
+    color: $textColor;
+    margin-bottom: 5%;
+    &__image {
+      display: inline;
+      margin-right: 2%;
+      @include breakpoints(md) {
+        margin-right: 8%;
+      }
+      a {
+        text-decoration: none;
+        img {
+          width: 5%;
+          object-fit: cover;
+          @include breakpoints(md) {
+            width: 18%;
+          }
+          @include breakpoints(lg) {
+            width: 8%;
+          }
+          @include breakpoints(xl) {
+            width: 5%;
+          }
+          @include breakpoints(xxl) {
+            width: 5%;
+          }
+        }
+      }
+    }
+  }
+}
