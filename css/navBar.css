@@ -1,0 +1,43 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 3  | /   @include breakpoints(lg) {
+ * 4  | |     display: flex;
+ * 5  | |     &__left {
+ * 6  | |       &__list {
+ * 7  | |         display: flex;
+ * 8  | |         list-style: none;
+ * 9  | |         &__item {
+ * 10 | |           a {
+ * 11 | |             display: flex;
+ * 12 | |             align-items: center;
+ * 13 | |             text-decoration: none;
+ * 14 | |           }
+ * 15 | |         }
+ * 16 | |       }
+ * 17 | |     }
+ * 18 | |     &__right {
+ * 19 | |       display: inline-block;
+ * 20 | |       &__list {
+ * 21 | |         display: flex;
+ * 22 | |         list-style: none;
+ * 23 | |         &__item {
+ * 24 | |           a {
+ * 25 | |             text-decoration: none;
+ * 26 | |           }
+ * 27 | |         }
+ * 28 | |       }
+ * 29 | |     }
+ * 30 | \   }
+ *    '
+ *   scss\navBar.scss 3:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 3  \2502  \250c    @include breakpoints(lg) {\a 4  \2502  \2502      display: flex;\a 5  \2502  \2502      &__left {\a 6  \2502  \2502        &__list {\a 7  \2502  \2502          display: flex;\a 8  \2502  \2502          list-style: none;\a 9  \2502  \2502          &__item {\a 10 \2502  \2502            a {\a 11 \2502  \2502              display: flex;\a 12 \2502  \2502              align-items: center;\a 13 \2502  \2502              text-decoration: none;\a 14 \2502  \2502            }\a 15 \2502  \2502          }\a 16 \2502  \2502        }\a 17 \2502  \2502      }\a 18 \2502  \2502      &__right {\a 19 \2502  \2502        display: inline-block;\a 20 \2502  \2502        &__list {\a 21 \2502  \2502          display: flex;\a 22 \2502  \2502          list-style: none;\a 23 \2502  \2502          &__item {\a 24 \2502  \2502            a {\a 25 \2502  \2502              text-decoration: none;\a 26 \2502  \2502            }\a 27 \2502  \2502          }\a 28 \2502  \2502        }\a 29 \2502  \2502      }\a 30 \2502  \2514    }\a    \2575 \a   scss\\navBar.scss 3:3  root stylesheet";
+}

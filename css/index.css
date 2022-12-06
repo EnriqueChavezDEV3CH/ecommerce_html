@@ -65,5 +65,60 @@ footer {
 .productSection__products__item__icon img {
   width: 60px;
 }
+.navBar {
+  display: none;
+}
+@media (min-width: 992px) {
+  .navBar {
+    display: flex;
+  }
+  .navBar__left__list {
+    display: flex;
+    list-style: none;
+  }
+  .navBar__left__list__item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .navBar__right {
+    display: inline-block;
+  }
+  .navBar__right__list {
+    display: flex;
+    list-style: none;
+  }
+  .navBar__right__list__item a {
+    text-decoration: none;
+  }
+}
+
+.menu {
+  display: flex;
+}
+@media (min-width: 992px) {
+  .menu {
+    display: none;
+  }
+}
+.menu__left__list {
+  display: flex;
+  list-style: none;
+}
+.menu__left__list__item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.menu__right {
+  display: inline-block;
+}
+.menu__right__list {
+  display: flex;
+  list-style: none;
+}
+.menu__right__list__item a {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=index.css.map */
