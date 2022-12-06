@@ -1,0 +1,49 @@
+.newProduct {
+  &__image {
+    background-color: $firstColor;
+    margin: 0 0 0 40%;
+    padding: 10% 0;
+    width: 30;
+    display: flex;
+  }
+  &__information {
+    &__text {
+        margin: 10% 15% 10% 5%;
+      &__title {
+          color: $titleColor;
+          font-size: 25px;
+          font-weight: 700;
+          span{
+            font-weight: 500;
+            display: block;
+          }
+        
+      }
+      &__description {
+        color: $textColor;
+        font-size: 15px;
+        margin: 5% 0;
+      }
+      &__price {
+        color: $firstColor;
+      }
+    }
+    &__buttons {
+        margin: 10% 15% 10% 5%;
+      &__discover {
+        background-color: $textColorLight;
+        border: none;
+        padding: 3%;
+        margin-right: -0.1%;
+        font-size: 8px;
+      }
+      &__add {
+        background-color: $buttonColor;
+        color: $containerColor;
+        border: none;
+        padding: 4%;
+        margin-left: -1%;
+      }
+    }
+  }
+}
