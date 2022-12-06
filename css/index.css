@@ -1,18 +1,69 @@
-/* Error: Undefined variable.
- *    ,
- * 11 |   background-color: $colorSextantary;
- *    |                     ^^^^^^^^^^^^^^^^
- *    '
- *   scss\layout.scss 11:21  @import
- *   scss\index.scss 4:9     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 11 \2502    background-color: $colorSextantary;\d\a    \2502                      ^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout.scss 11:21  @import\a   scss\\index.scss 4:9     root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  max-width: 90rem;
+  grid-template-rows: minmax(1fr, 2fr, 1fr);
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  header {
+    height: 80px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+}
+@media (min-width: 768px) {
+  footer {
+    height: 320px;
+  }
+}
+
+.productSection__filters {
+  display: flex;
+}
+.productSection__filters__bar {
+  font-size: 25px;
+}
+.productSection__products {
+  display: flex;
+}
+.productSection__products__item {
+  margin: 0 20px;
+}
+.productSection__products__item__image {
+  background-color: hsl(0deg, 0%, 90%);
+}
+.productSection__products__item__icon {
+  width: 100px;
+  height: 100px;
+  background-color: hsl(206deg, 4%, 97%);
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+.productSection__products__item__icon img {
+  width: 60px;
+}
+
+/*# sourceMappingURL=index.css.map */

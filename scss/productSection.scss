@@ -1,0 +1,31 @@
+.productSection {
+  &__filters {
+    display: flex;
+    &__bar {
+      font-size: 25px;
+    }
+  }
+  &__products {
+    display: flex;
+    &__item {
+        margin: 0 20px;
+      &__image {
+        background-color: $backgroundColor;
+
+      }
+      &__icon {
+        width: 100px;
+        height: 100px;
+        background-color: $bodyColor;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        img {
+          width: 60px;
+        }
+      }
+      &__information {
+      }
+    }
+  }
+}

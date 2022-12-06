@@ -11,6 +11,8 @@ $textColorLight: hsl(0, 0%, 55%);
 $bodyColor: hsl(206, 4%, 97%);
 $containerColor: #fff;
 $borderColor: hsl(0, 0%, 94%);
+$backgroundColor: hsl(0,0%,90%);
+
 
 @mixin breakpoints($point) {
   @if $point == sm {
