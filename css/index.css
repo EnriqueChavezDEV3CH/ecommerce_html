@@ -164,32 +164,57 @@ footer {
 @media (min-width: 768px) {
   .newProduct__image {
     position: relative;
-    right: -35%;
+    right: -30%;
     padding: 5% 0 3%;
+  }
+}
+@media (min-width: 992px) {
+  .newProduct__image {
+    right: -30%;
   }
 }
 @media (min-width: 768px) {
   .newProduct__information {
     position: relative;
-    left: -50%;
+    left: -56%;
+  }
+}
+@media (min-width: 992px) {
+  .newProduct__information {
+    left: -45%;
+  }
+}
+@media (min-width: 1200px) {
+  .newProduct__information {
+    left: -43%;
+  }
+}
+@media (min-width: 1400px) {
+  .newProduct__information {
+    left: -42%;
   }
 }
 .newProduct__information__text {
-  margin: 10% 15% 10% 5%;
+  margin: 10% 5%;
 }
 .newProduct__information__text__title {
   color: hsl(0deg, 0%, 15%);
-  font-size: 25px;
+  font-size: 33px;
   font-weight: 700;
 }
 .newProduct__information__text__title span {
   font-weight: 500;
   display: block;
 }
+@media (min-width: 768px) {
+  .newProduct__information__text__title span {
+    margin-right: -40%;
+  }
+}
 .newProduct__information__text__description {
   color: hsl(0deg, 0%, 35%);
   font-size: 15px;
-  margin: 5% 0;
+  margin: 5% 5% 5% 0;
 }
 .newProduct__information__text__price {
   color: hsl(354deg, 78%, 60%);
@@ -197,19 +222,24 @@ footer {
 .newProduct__information__buttons {
   margin: 10% 15% 10% 5%;
 }
+@media (min-width: 768px) {
+  .newProduct__information__buttons {
+    margin: 0 5%;
+  }
+}
 .newProduct__information__buttons__discover {
   background-color: hsl(0deg, 0%, 55%);
   border: none;
-  padding: 1rem;
-  font-size: 8px;
+  padding: 1rem 2rem;
+  font-size: 12px;
 }
 .newProduct__information__buttons__add {
   background-color: hsl(0deg, 0%, 17%);
   color: #fff;
   border: none;
-  padding: 1.05rem;
+  padding: 1.2rem 2.2rem;
   margin-left: -1%;
-  font-size: 11px;
+  font-size: 14px;
 }
 @media (min-width: 768px) {
   .newProduct__information__buttons__add {

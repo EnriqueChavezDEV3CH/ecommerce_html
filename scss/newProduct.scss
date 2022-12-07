@@ -11,30 +11,45 @@
     display: flex;
     @include breakpoints(md) {
       position: relative;
-      right: -35%;
+      right: -30%;
       padding: 5% 0 3%;
+    }
+    @include breakpoints(lg) {
+      right: -30%;
     }
   }
   &__information {
     @include breakpoints(md) {
       position: relative;
-      left: -50%;
+      left: -56%;
+    }
+    @include breakpoints(lg) {
+      left: -45%;
+    }
+    @include breakpoints(xl) {
+      left: -43%;
+    }
+    @include breakpoints(xxl) {
+      left: -42%;
     }
     &__text {
-      margin: 10% 15% 10% 5%;
+      margin: 10% 5%;
       &__title {
         color: $titleColor;
-        font-size: 25px;
+        font-size: 33px;
         font-weight: 700;
         span {
           font-weight: 500;
           display: block;
+          @include breakpoints(md) {
+            margin-right: -40%;
+          }
         }
       }
       &__description {
         color: $textColor;
         font-size: 15px;
-        margin: 5% 0;
+        margin: 5% 5% 5% 0;
       }
       &__price {
         color: $firstColor;
@@ -42,22 +57,25 @@
     }
     &__buttons {
       margin: 10% 15% 10% 5%;
+      @include breakpoints(md) {
+        margin: 0 5%;
+      }
       &__discover {
         background-color: $textColorLight;
         border: none;
-        padding: 1rem;
-        font-size: 8px;
+        padding: 1rem 2rem;
+        font-size: 12px;
       }
       &__add {
         background-color: $buttonColor;
         color: $containerColor;
         border: none;
-        padding: 1.05rem;
+        padding: 1.2rem 2.2rem;
         margin-left: -1%;
-        font-size: 11px;
+        font-size: 14px;
         @include breakpoints(md) {
           margin-left: -2%;
-   }
+        }
       }
     }
   }
