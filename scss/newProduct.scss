@@ -71,11 +71,8 @@
         color: $containerColor;
         border: none;
         padding: 1.2rem 2.2rem;
-        margin-left: -1%;
+        margin-left: -2%;
         font-size: 14px;
-        @include breakpoints(md) {
-          margin-left: -2%;
-        }
       }
     }
   }

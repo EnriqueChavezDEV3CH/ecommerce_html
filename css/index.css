@@ -238,13 +238,8 @@ footer {
   color: #fff;
   border: none;
   padding: 1.2rem 2.2rem;
-  margin-left: -1%;
+  margin-left: -2%;
   font-size: 14px;
-}
-@media (min-width: 768px) {
-  .newProduct__information__buttons__add {
-    margin-left: -2%;
-  }
 }
 
 .navBar {
