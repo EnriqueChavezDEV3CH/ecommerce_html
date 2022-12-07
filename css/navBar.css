@@ -2,32 +2,53 @@
  *    ,
  * 3  | /   @include breakpoints(lg) {
  * 4  | |     display: flex;
- * 5  | |     &__left {
- * 6  | |       &__list {
- * 7  | |         display: flex;
- * 8  | |         list-style: none;
- * 9  | |         &__item {
- * 10 | |           a {
- * 11 | |             display: flex;
- * 12 | |             align-items: center;
- * 13 | |             text-decoration: none;
- * 14 | |           }
- * 15 | |         }
- * 16 | |       }
- * 17 | |     }
- * 18 | |     &__right {
- * 19 | |       display: inline-block;
- * 20 | |       &__list {
- * 21 | |         display: flex;
- * 22 | |         list-style: none;
- * 23 | |         &__item {
- * 24 | |           a {
- * 25 | |             text-decoration: none;
- * 26 | |           }
- * 27 | |         }
- * 28 | |       }
- * 29 | |     }
- * 30 | \   }
+ * 5  | |     width: 100%;
+ * 6  | |     align-items: center;
+ * 7  | |     &__left {
+ * 8  | |       display: flex;
+ * 9  | |       align-items: center;
+ * 10 | |       flex-grow: 1;
+ * 11 | |       &__list {
+ * 12 | |         display: flex;
+ * 13 | |         list-style: none;
+ * 14 | |         align-items: center;
+ * 15 | |         &__item {
+ * 16 | |           margin: 0 20px;
+ * 17 | |           a {
+ * 18 | |             display: flex;
+ * 19 | |             align-items: center;
+ * 20 | |             text-decoration: none;
+ * 21 | |             &:hover {
+ * 22 | |               color: $firstColor;
+ * 23 | |             }
+ * 24 | |             
+ * 25 | |             img {
+ * 26 | |               margin: 0 5px;
+ * 27 | |             }
+ * 28 | |             p {
+ * 29 | |               margin: 0 5px;
+ * 30 | |             }
+ * 31 | |           }
+ * 32 | |         }
+ * 33 | |       }
+ * 34 | |     }
+ * 35 | |     &__right {
+ * 36 | |       display: flex;
+ * 37 | |       align-items: center;
+ * 38 | |       flex-grow: 1;
+ * 39 | |       &__list {
+ * 40 | |         display: flex;
+ * 41 | |         align-items: center;
+ * 42 | |         list-style: none;
+ * 43 | |         &__item {
+ * 44 | |           margin: 0 20px;
+ * 45 | |           a {
+ * 46 | |             text-decoration: none;
+ * 47 | |           }
+ * 48 | |         }
+ * 49 | |       }
+ * 50 | |     }
+ * 51 | \   }
  *    '
  *   scss\navBar.scss 3:3  root stylesheet */
 
@@ -39,5 +60,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 3  \2502  \250c    @include breakpoints(lg) {\a 4  \2502  \2502      display: flex;\a 5  \2502  \2502      &__left {\a 6  \2502  \2502        &__list {\a 7  \2502  \2502          display: flex;\a 8  \2502  \2502          list-style: none;\a 9  \2502  \2502          &__item {\a 10 \2502  \2502            a {\a 11 \2502  \2502              display: flex;\a 12 \2502  \2502              align-items: center;\a 13 \2502  \2502              text-decoration: none;\a 14 \2502  \2502            }\a 15 \2502  \2502          }\a 16 \2502  \2502        }\a 17 \2502  \2502      }\a 18 \2502  \2502      &__right {\a 19 \2502  \2502        display: inline-block;\a 20 \2502  \2502        &__list {\a 21 \2502  \2502          display: flex;\a 22 \2502  \2502          list-style: none;\a 23 \2502  \2502          &__item {\a 24 \2502  \2502            a {\a 25 \2502  \2502              text-decoration: none;\a 26 \2502  \2502            }\a 27 \2502  \2502          }\a 28 \2502  \2502        }\a 29 \2502  \2502      }\a 30 \2502  \2514    }\a    \2575 \a   scss\\navBar.scss 3:3  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 3  \2502  \250c    @include breakpoints(lg) {\a 4  \2502  \2502      display: flex;\a 5  \2502  \2502      width: 100%;\a 6  \2502  \2502      align-items: center;\a 7  \2502  \2502      &__left {\a 8  \2502  \2502        display: flex;\a 9  \2502  \2502        align-items: center;\a 10 \2502  \2502        flex-grow: 1;\a 11 \2502  \2502        &__list {\a 12 \2502  \2502          display: flex;\a 13 \2502  \2502          list-style: none;\a 14 \2502  \2502          align-items: center;\a 15 \2502  \2502          &__item {\a 16 \2502  \2502            margin: 0 20px;\a 17 \2502  \2502            a {\a 18 \2502  \2502              display: flex;\a 19 \2502  \2502              align-items: center;\a 20 \2502  \2502              text-decoration: none;\a 21 \2502  \2502              &:hover {\a 22 \2502  \2502                color: $firstColor;\a 23 \2502  \2502              }\a 24 \2502  \2502              \a 25 \2502  \2502              img {\a 26 \2502  \2502                margin: 0 5px;\a 27 \2502  \2502              }\a 28 \2502  \2502              p {\a 29 \2502  \2502                margin: 0 5px;\a 30 \2502  \2502              }\a 31 \2502  \2502            }\a 32 \2502  \2502          }\a 33 \2502  \2502        }\a 34 \2502  \2502      }\a 35 \2502  \2502      &__right {\a 36 \2502  \2502        display: flex;\a 37 \2502  \2502        align-items: center;\a 38 \2502  \2502        flex-grow: 1;\a 39 \2502  \2502        &__list {\a 40 \2502  \2502          display: flex;\a 41 \2502  \2502          align-items: center;\a 42 \2502  \2502          list-style: none;\a 43 \2502  \2502          &__item {\a 44 \2502  \2502            margin: 0 20px;\a 45 \2502  \2502            a {\a 46 \2502  \2502              text-decoration: none;\a 47 \2502  \2502            }\a 48 \2502  \2502          }\a 49 \2502  \2502        }\a 50 \2502  \2502      }\a 51 \2502  \2514    }\a    \2575 \a   scss\\navBar.scss 3:3  root stylesheet";
 }

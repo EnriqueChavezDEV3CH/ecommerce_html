@@ -1,10 +1,10 @@
 /* Error: Undefined mixin.
  *   ,
- * 3 | /   @include breakpoints(lg) {
- * 4 | |     display: none;
- * 5 | \   }
+ * 6 | /   @include breakpoints(lg) {
+ * 7 | |     display: none;
+ * 8 | \   }
  *   '
- *   scss\menu.scss 3:3  root stylesheet */
+ *   scss\menu.scss 6:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 3 \2502  \250c    @include breakpoints(lg) {\a 4 \2502  \2502      display: none;\a 5 \2502  \2514    }\a   \2575 \a   scss\\menu.scss 3:3  root stylesheet";
+  content: "Error: Undefined mixin.\a   \2577 \a 6 \2502  \250c    @include breakpoints(lg) {\a 7 \2502  \2502      display: none;\a 8 \2502  \2514    }\a   \2575 \a   scss\\menu.scss 6:3  root stylesheet";
 }

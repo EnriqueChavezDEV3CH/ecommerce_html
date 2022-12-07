@@ -2,13 +2,17 @@ body {
   display: grid;
   max-width: 90rem;
   grid-template-rows: minmax(1fr, 2fr, 1fr);
+  background-color: $backgroundBodyColor;
 }
 header {
   height: 60px;
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: #FFFFFF;
+  background-color: $backgroundBodyAltColor;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
   @include breakpoints(lg) {
     height: 80px;
   }
@@ -28,11 +32,11 @@ footer {
   }
   @include breakpoints(lg) {
     padding: 10% 0 10% 7%;
-   }
-   @include breakpoints(xl) {
+  }
+  @include breakpoints(xl) {
     padding: 8% 0 10% 10%;
-   }
-   @include breakpoints(xxl) {
+  }
+  @include breakpoints(xxl) {
     padding: 8% 0 10% 13%;
-   }
+  }
 }

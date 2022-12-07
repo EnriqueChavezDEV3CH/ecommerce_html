@@ -14,6 +14,7 @@ body {
   display: grid;
   max-width: 90rem;
   grid-template-rows: minmax(1fr, 2fr, 1fr);
+  background-color: #F7F7F9;
 }
 
 header {
@@ -22,6 +23,9 @@ header {
   position: sticky;
   top: 0;
   background-color: #FFFFFF;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 992px) {
   header {
@@ -61,30 +65,89 @@ footer {
 
 .productSection__filters {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin: 0 10%;
 }
 .productSection__filters__bar {
-  font-size: 25px;
+  font-size: 30px;
+  color: hsl(0deg, 0%, 55%);
+}
+.productSection__filters__item {
+  width: 130px;
+  margin: 10px 0;
+}
+.productSection__filters__item__title {
+  font-size: 15px;
+}
+.productSection__filters__item__description {
+  font-size: 13px;
 }
 .productSection__products {
-  display: flex;
+  display: block;
+}
+@media (min-width: 576px) {
+  .productSection__products {
+    display: flex;
+  }
 }
 .productSection__products__item {
-  margin: 0 20px;
+  margin: 20px 100px;
+  background-color: #FFFFFF;
+  border-radius: 0 0 10px 10px;
+}
+@media (min-width: 576px) {
+  .productSection__products__item {
+    margin: 0 20px;
+  }
 }
 .productSection__products__item__image {
   background-color: hsl(0deg, 0%, 90%);
+  border-radius: 10px 10px 0 0;
 }
 .productSection__products__item__icon {
-  width: 100px;
-  height: 100px;
+  width: 45px;
+  height: 45px;
   background-color: hsl(206deg, 4%, 97%);
   display: flex;
   align-items: center;
   border-radius: 50%;
+  position: relative;
+  top: -20px;
+  right: -30%;
+}
+@media (min-width: 576px) {
+  .productSection__products__item__icon {
+    width: 100px;
+    height: 100px;
+  }
 }
 .productSection__products__item__icon img {
-  width: 60px;
+  width: 20px;
 }
+@media (min-width: 576px) {
+  .productSection__products__item__icon img {
+    width: 60px;
+  }
+}
+.productSection__products__item__information {
+  font-weight: bold;
+  position: relative;
+  top: -20px;
+  right: -10px;
+}
+.productSection__products__item__information__price {
+  font-size: 17px;
+}
+.productSection__products__item__information__price span {
+  font-size: 14px;
+  font-weight: lighter;
+}
+.productSection__products__item__information__name {
+  font-size: 14px;
+}
+
 @media (min-width: 768px) {
   .newProduct {
     display: flex;
@@ -160,22 +223,48 @@ footer {
 @media (min-width: 992px) {
   .navBar {
     display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .navBar__left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
   }
   .navBar__left__list {
     display: flex;
     list-style: none;
+    align-items: center;
+  }
+  .navBar__left__list__item {
+    margin: 0 20px;
   }
   .navBar__left__list__item a {
     display: flex;
     align-items: center;
     text-decoration: none;
   }
+  .navBar__left__list__item a:hover {
+    color: hsl(354deg, 78%, 60%);
+  }
+  .navBar__left__list__item a img {
+    margin: 0 5px;
+  }
+  .navBar__left__list__item a p {
+    margin: 0 5px;
+  }
   .navBar__right {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
   }
   .navBar__right__list {
     display: flex;
+    align-items: center;
     list-style: none;
+  }
+  .navBar__right__list__item {
+    margin: 0 20px;
   }
   .navBar__right__list__item a {
     text-decoration: none;
@@ -184,27 +273,46 @@ footer {
 
 .menu {
   display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
 }
 @media (min-width: 992px) {
   .menu {
     display: none;
   }
 }
+.menu__left {
+  display: flex;
+  flex-grow: 3;
+}
 .menu__left__list {
   display: flex;
   list-style: none;
+  margin: 0 0 0 30px;
 }
 .menu__left__list__item a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
+.menu__left__list__item a img {
+  width: 40px;
+  margin: 0 5px;
+}
+.menu__left__list__item a p {
+  margin: 5px;
+}
 .menu__right {
-  display: inline-block;
+  display: flex;
+  flex-grow: 1;
 }
 .menu__right__list {
   display: flex;
   list-style: none;
+}
+.menu__right__list__item {
+  margin: 0 10px;
 }
 .menu__right__list__item a {
   text-decoration: none;

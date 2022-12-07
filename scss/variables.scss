@@ -12,6 +12,8 @@ $bodyColor: hsl(206, 4%, 97%);
 $containerColor: #fff;
 $borderColor: hsl(0, 0%, 94%);
 $backgroundColor: hsl(0,0%,90%);
+$backgroundBodyColor: #F7F7F9;
+$backgroundBodyAltColor: #FFFFFF;
 
 
 @mixin breakpoints($point) {

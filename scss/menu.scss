@@ -1,27 +1,42 @@
 .menu {
   display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
   @include breakpoints(lg) {
     display: none;
   }
   &__left {
+    display: flex;
+    flex-grow: 3;
     &__list {
       display: flex;
       list-style: none;
+      margin: 0 0 0 30px;
       &__item {
         a {
           display: flex;
           align-items: center;
           text-decoration: none;
+          img {
+            width: 40px;
+            margin: 0 5px;
+          }
+          p {
+            margin: 5px;
+          }
         }
       }
     }
   }
   &__right {
-    display: inline-block;
+    display: flex;
+    flex-grow: 1;
     &__list {
       display: flex;
       list-style: none;
       &__item {
+        margin: 0 10px;
         a {
           text-decoration: none;
         }
