@@ -5,6 +5,18 @@
     align-items: center;
     text-align: center;
     margin: 0 10%;
+    @include breakpoints(md) {
+      margin: 0 13%;
+    }
+    @include breakpoints(lg) {
+      margin: 0 15%;
+    }
+    @include breakpoints(xl) {
+      margin: 0 18%;
+    }
+    @include breakpoints(xxl) {
+      margin: 0 20%;
+    }
     &__bar {
       font-size: 30px;
       color: $textColorLight;
@@ -25,13 +37,24 @@
     @include breakpoints(sm) {
       display: flex;
     }
-
+    @include breakpoints(md) {
+      margin: 20px 80px;
+    }
+    @include breakpoints(lg) {
+      margin: 20px 100px;
+    }
+    @include breakpoints(xl) {
+      margin: 20px 120px;
+    }
+    @include breakpoints(xxl) {
+      margin: 20px 140px;
+    }
     &__item {
       margin: 20px 100px;
       background-color: $backgroundBodyAltColor;
       border-radius: 0 0 10px 10px;
-      @include breakpoints(sm) {
-        margin: 0 20px;
+      @include breakpoints(md) {
+        margin: 20px 20px;
       }
       &__image {
         background-color: $backgroundColor;
@@ -47,14 +70,32 @@
         position: relative;
         top: -20px;
         right: -30%;
-        @include breakpoints(sm) {
-          width: 100px;
-          height: 100px;
+        @include breakpoints(md) {
+          width: 50px;
+          height: 50px;
+          top: -8%;
+          right: -32%;
+        }
+        @include breakpoints(lg) {
+          width: 55px;
+          height: 55px;
+          top: -7%;
+          right: -35%;
+        }
+        @include breakpoints(xxl) {
+          width: 65px;
+          height: 65px;
         }
         img {
           width: 20px;
-          @include breakpoints(sm) {
-            width: 60px;
+          @include breakpoints(md) {
+            width: 25px;
+          }
+          @include breakpoints(lg) {
+            width: 30px;
+          }
+          @include breakpoints(xxl) {
+            width: 35px;
           }
         }
       }
@@ -75,5 +116,11 @@
         }
       }
     }
+  }
+}
+
+.empty {
+  @include breakpoints(md) {
+    display: none;
   }
 }

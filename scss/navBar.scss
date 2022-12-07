@@ -12,6 +12,9 @@
         display: flex;
         list-style: none;
         align-items: center;
+        width: 100%;
+        justify-content: left;
+        margin-left: 20%;
         &__item {
           margin: 0 20px;
           a {
@@ -21,7 +24,7 @@
             &:hover {
               color: $firstColor;
             }
-            
+
             img {
               margin: 0 5px;
             }
@@ -40,6 +43,9 @@
         display: flex;
         align-items: center;
         list-style: none;
+        width: 100%;
+        justify-content: right;
+        margin-right: 26%;
         &__item {
           margin: 0 20px;
           a {
